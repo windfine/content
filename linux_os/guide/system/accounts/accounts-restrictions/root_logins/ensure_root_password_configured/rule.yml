@@ -1,6 +1,6 @@
 documentation_complete: true
 
-prodtype: rhel9,ubuntu2004,ubuntu2204
+prodtype: ocs23,rhel9,ubuntu2004,ubuntu2204
 
 title: 'Ensure Authentication Required for Single User Mode'
 

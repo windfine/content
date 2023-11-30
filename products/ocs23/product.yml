@@ -1,0 +1,24 @@
+product: ocs23
+full_name: OpenCloudOS Stream 23
+type: platform
+
+benchmark_id: OCS-23
+benchmark_root: "../../linux_os/guide"
+
+
+profiles_root: "./profiles"
+
+pkg_manager: "dnf"
+
+init_system: "systemd"
+
+cpes_root: "../../shared/applicability"
+cpes:
+  - ocs23:
+      name: "cpe:/o:ocs:ocs:23"
+      title: "OpenCloudOS Stream 23"
+      check_id: installed_OS_is_ocs23
+
+# Mapping of CPE platform to package
+platform_package_overrides:
+  login_defs: "shadow-utils"

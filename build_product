@@ -332,6 +332,7 @@ all_cmake_products=(
 	FEDORA
 	FIREFOX
 	OCP4
+	OCS23
 	RHCOS4
 	OL7
 	OL8

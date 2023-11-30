@@ -10,6 +10,7 @@
 	<platform>multi_platform_fedora</platform>
 	<platform>multi_platform_openembedded</platform>
 	<platform>multi_platform_opensuse</platform>
+	<platform>multi_platform_ocs</platform>
 	<platform>multi_platform_ol</platform>
 	<platform>multi_platform_rhcos</platform>
 	<platform>multi_platform_rhel</platform>

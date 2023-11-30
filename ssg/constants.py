@@ -49,6 +49,7 @@ product_directories = [
     'firefox',
     'macos1015',
     'ocp4',
+    'ocs23',
     'rhcos4',
     'ol7', 'ol8', 'ol9',
     'opensuse',
@@ -207,6 +208,7 @@ FULL_NAME_TO_PRODUCT_MAPPING = {
     "Firefox": "firefox",
     "Apple macOS 10.15": "macos1015",
     "Red Hat OpenShift Container Platform 4": "ocp4",
+    "OpenCloudOS Stream 23": "ocs23",
     "Red Hat Enterprise Linux CoreOS 4": "rhcos4",
     "Oracle Linux 7": "ol7",
     "Oracle Linux 8": "ol8",
@@ -274,7 +276,7 @@ REFERENCES = dict(
 
 
 MULTI_PLATFORM_LIST = ["rhel", "fedora", "rhv", "debian", "ubuntu",
-                       "opensuse", "sle", "ol", "ocp", "rhcos",
+                       "opensuse", "sle", "ol", "ocp", "ocs", "rhcos",
                        "example", "eks", "alinux", "uos", "anolis", "openembedded"]
 
 MULTI_PLATFORM_MAPPING = {
@@ -287,6 +289,7 @@ MULTI_PLATFORM_MAPPING = {
     "multi_platform_opensuse": ["opensuse"],
     "multi_platform_ol": ["ol7", "ol8", "ol9"],
     "multi_platform_ocp": ["ocp4"],
+    "multi_platform_ocs": ["ocs23"],
     "multi_platform_rhcos": ["rhcos4"],
     "multi_platform_rhel": ["rhel7", "rhel8", "rhel9"],
     "multi_platform_rhv": ["rhv4"],
@@ -461,6 +464,7 @@ MAKEFILE_ID_TO_PRODUCT_MAP = {
     'example': 'Example',
     'ol': 'Oracle Linux',
     'ocp': 'Red Hat OpenShift Container Platform',
+    'ocs': 'OpenCloudOS Stream',
     'rhcos': 'Red Hat Enterprise Linux CoreOS',
     'eks': 'Amazon Elastic Kubernetes Service',
     'openembedded': 'OpenEmbedded',

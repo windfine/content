@@ -1,4 +1,4 @@
-{{%- if product in ["ol7", "rhel7", "rhel8", "rhel9"] %}}
+{{%- if product in ["ocs23", "ol7", "rhel7", "rhel8", "rhel9"] %}}
     {{%- set kmod_audit="-a always,exit -F path=/usr/bin/kmod -F perm=x -F auid>=" ~ uid_min ~ " -F auid!=unset -F key=privileged" %}}
 {{%- else %}}
     {{%- set kmod_audit="-w /usr/bin/kmod -p x -k modules" %}}
@@ -6,7 +6,7 @@
 
 documentation_complete: true
 
-prodtype: alinux3,ol7,ol8,ol9,rhel7,rhel8,rhel9,sle12,sle15,ubuntu2004,ubuntu2204
+prodtype: alinux3,ocs23,ol7,ol8,ol9,rhel7,rhel8,rhel9,sle12,sle15,ubuntu2004,ubuntu2204
 
 title: 'Ensure auditd Collects Information on the Use of Privileged Commands - kmod'
 
